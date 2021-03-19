@@ -3,12 +3,12 @@ pipeline{
         stages{
             stage('Make Directory'){
                 steps{
-                    sh "mkdir jenkins-tutorial-test"
+                    sh "mkdir pipelineRepo-test"
                 }
             }
             stage('Make Files'){
                 steps{
-                    sh "touch jenkins-tutorial-test/file1 jenkins-tutorial-test/file2"
+                    sh "touch pipelineRepo-test/file1 pipelineRepo-test/file2"
                 }
             }
         }
